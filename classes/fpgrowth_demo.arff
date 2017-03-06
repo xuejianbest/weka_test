@@ -1,0 +1,13 @@
+@relation items
+
+@attribute '面包' {t} 
+@attribute '尿布' {t}
+@attribute '啤酒' {t,k}
+
+% {"面包", "尿布", "啤酒"}, {"尿布", "啤酒"}, {"尿布", "啤酒"}, {"面包"}
+
+@data
+t,t,t
+?,t,t
+?,t,t
+t,?,?
